@@ -26,7 +26,7 @@ RUN yum makecache fast \
       python-pip \
  && yum clean all
 
-# Install Ansible via Pip.
+# Install Ansible via Pip
 RUN pip install $pip_packages
 
 # Disable requiretty.
