@@ -22,6 +22,7 @@ RUN yum makecache fast \
  && yum -y install \
       sudo \
       which \
+      unzip \
       python-pip \
  && yum clean all
 
