@@ -23,6 +23,7 @@ RUN yum makecache fast \
       sudo \
       which \
       unzip \
+      nginx \
       python-pip \
  && yum clean all
 
