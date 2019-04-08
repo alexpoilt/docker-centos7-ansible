@@ -24,7 +24,14 @@ RUN yum makecache fast \
       which \
       unzip \
       nginx \
+      yum-utils \
+      device-mapper-persistent-data \
+      lvm2 \
       python-pip \
+ && yum-config-manager \
+    --add-repo \
+    https://download.docker.com/linux/centos/docker-ce.repo \
+ && yum install docker-ce \
  && yum clean all
 
 # Install Ansible via Pip
