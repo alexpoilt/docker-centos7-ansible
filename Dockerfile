@@ -31,7 +31,7 @@ RUN yum makecache fast \
  && yum-config-manager \
     --add-repo \
     https://download.docker.com/linux/centos/docker-ce.repo \
- && yum install docker-ce \
+ && yum -y install docker-ce \
  && yum clean all
 
 # Install Ansible via Pip
